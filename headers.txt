@@ -1,0 +1,25 @@
+GET https://www.googleapis.com/books/v1/volumes?q=Turing
+
+--Request Headers--
+User-Agent: PostmanRuntime/7.51.1 // Identifies the client making the request (Postman in this case)
+Accept: */*  // Tells the server the type of response the client can handle (*/* means any type)
+Postman-Token: f7499937-af5d-44f6-b073-2feb81ac142a  // Unique token Postman generates to identify this request (used internally for tracking)
+Host: www.googleapis.com  // The server domain that the request is being sent to
+Accept-Encoding: gzip, deflate, br  // Compression algorithms the client can handle to reduce response size (gzip, deflate, brotli)
+Connection: keep-alive  // Keeps the TCP connection open for potential additional requests, improving efficiency
+
+
+--Response Headers--
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+          // Indicates which request headers the server uses to decide how to serve content (caching related)
+Content-Type: application/json; charset=UTF-8  // Format of the response body (JSON) and character encoding (UTF-8)
+Content-Encoding: gzip  // The response is compressed using gzip to reduce size
+Date: Sat, 31 Jan 2026 22:02:52 GMT  // Date and time when the server generated the response
+Server: ESF  // Server software handling the request (ESF in this case)
+X-XSS-Protection: 0  // Cross-site scripting protection header; 0 means the server is not enforcing XSS filters
+X-Frame-Options: SAMEORIGIN  // Prevents the page from being embedded in an iframe from another domain (security header)
+X-Content-Type-Options: nosniff  // Prevents browsers from guessing the content type, enforcing the type specified in Content-Type
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000  // Alternative services for HTTP/3 protocol; tells the client it can connect using HTTP/3
+Transfer-Encoding: chunked  // Response body is sent in chunks, meaning the server sends data in pieces as it becomes available
